@@ -1,0 +1,4 @@
+.mask-horizontal-fade {
+  /* mask-image: linear-gradient(to right, transparent 0%, black 3%, black 8%, transparent 100%); */
+  /* -webkit-mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%); */
+}
