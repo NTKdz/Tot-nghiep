@@ -6,11 +6,23 @@ html {
   scroll-behavior: smooth;
 }
 
-.title{
+.title {
   font-size: 2.5em;
-  line-height: 1.1;
   font-weight: bold;
+  margin-top: 20px;
+  padding: 8px;
+  margin-left: 10px;
+  margin-right: 10px;
+
+  background: linear-gradient(to right, #ff9a9e, #fad0c4); /* Soft pink gradient */
+  border-radius: 12px;
+
+  color: #313131; /* White text for contrast */
+  text-align: center;
+  white-space: nowrap;
 }
+
+
 
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;

@@ -22,14 +22,21 @@ const responsive = {
 };
 
 export default function Carousels() {
+
   return (
     <div>
-      <div className="title mt-5">Album</div>
+      <div className="title">Album</div>
       <div className="mb-10 italic text-center text-gray-500">
         Những bức ảnh được sưu tầm từ nhiều nguồn khác nhau :)) (Vinh)
       </div>
-      <Carousel responsive={responsive} className="" infinite={true}>
-        {[1, 2, 3, 4, 5].map((item) => (
+      <Carousel
+        responsive={responsive}
+        className=""
+        infinite={true}
+        autoPlay={true}
+        autoPlaySpeed={3000}
+      >
+        {[1, 2, 3, 4, 5, 6, 7].map((item) => (
           <div key={item} className=" w-full h-full bg-gray-200">
             <img
               src={`anh/${item}.jpg`}
