@@ -7,7 +7,6 @@ import Message from "./components/message/Message";
 export default function App() {
   const [activeSection, setActiveSection] = useState("");
   const audioRef = useRef<HTMLAudioElement>(null);
-  const [showOverlay, setShowOverlay] = useState(true);
 
   useEffect(() => {
     const sections = document.querySelectorAll("div[id]");
@@ -27,29 +26,8 @@ export default function App() {
     return () => observer.disconnect();
   }, []);
 
-  const handleStartClick = () => {
-    if (audioRef.current) {
-      audioRef.current.play().catch((error: DOMException) => {
-        console.warn("Audio playback prevented:", error);
-      });
-    }
-    setShowOverlay(false);
-  };
-
   return (
     <div>
-      {showOverlay && (
-        <div
-          className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-[100]"
-          onClick={handleStartClick}
-        >
-          <div className="text-white text-center p-8 bg-gray-800 rounded-lg">
-            <h1 className="text-3xl mb-4">Xin chào!</h1>
-            <p className="text-lg">Vui lòng chạm để bắt đầu trải nghiệm :))</p>
-          </div>
-        </div>
-      )}
-
       <div
         className="w-10 h-10 fixed top-10 left-10 z-50 hover:cursor-pointer"
         onClick={() => {
