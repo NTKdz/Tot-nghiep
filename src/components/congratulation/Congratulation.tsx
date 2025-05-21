@@ -56,15 +56,17 @@ export default function Congratulation() {
           className="w-full h-full object-cover opacity-75 mask-horizontal-fade"
         />
 
-        <div className="text-center font-semibold mt-10 text-4xl px-4 pb-3 pt-2 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-[120px] bg-white rounded-2xl">
-          {displayedText}
-          <span className="animate-pulse">|</span>
+        <div className="text-center font-semibold mt-10 text-2xl md:text-4xl px-4 pb-3 pt-2 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-[120px] bg-white rounded-2xl">
+          <span className="block whitespace-nowrap text-ellipsis">
+            {displayedText}
+            <span className="animate-pulse">|</span>
+          </span>
 
-          <div className="absolute z-50 top-1/2 left-1/2 transform -translate-x-1/2 translate-y-[50px] flex space-x-2">
+          <div className="absolute z-50 mt-10 top-1/2 left-1/2 transform -translate-x-1/2 flex space-x-2">
             {"Khoidz".split("").map((letter, index) => (
               <span
                 key={index}
-                className="text-5xl font-bold text-black animate-bounce"
+                className="text-2xl md:text-4xl font-bold text-black animate-bounce"
                 style={{
                   animationDelay: `${index * 0.1}s`,
                   display: "inline-block",
@@ -76,7 +78,6 @@ export default function Congratulation() {
           </div>
         </div>
       </div>
-
     </div>
   );
 }
