@@ -56,7 +56,8 @@ export default function Congratulation() {
           className="w-full h-full object-cover opacity-75 mask-horizontal-fade"
         />
 
-        <div className="text-center font-semibold mt-10 text-2xl md:text-4xl px-4 md:pb-3 pt-2 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-[120px] bg-white rounded-2xl">
+        <div className="text-center font-semibold mt-10 text-2xl md:text-4xl px-4 md:pb-3 pt-2 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-[120px] bg-white/30 backdrop-blur-md rounded-2xl">
+
           <span className="hidden md:block text-ellipsis">
             {displayedText}
             <span className="animate-pulse">|</span>

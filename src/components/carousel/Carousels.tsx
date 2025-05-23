@@ -22,7 +22,6 @@ const responsive = {
 };
 
 export default function Carousels() {
-
   return (
     <div>
       <div className="title">Album</div>
@@ -36,11 +35,11 @@ export default function Carousels() {
         autoPlay={true}
         autoPlaySpeed={3000}
       >
-        {[1, 2, 3, 4, 5, 6, 7].map((item) => (
-          <div key={item} className=" w-full h-full bg-gray-200">
+        {Array.from({ length: 14 }, (_, i) => i + 1).map((item) => (
+          <div key={item} className="w-full h-full bg-gray-200">
             <img
               src={`anh/${item}.jpg`}
-              alt={`Random ${item}`}
+              alt={`Image ${item}`}
               className="w-full h-full object-cover"
               draggable={false}
             />
