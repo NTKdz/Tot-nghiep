@@ -18,7 +18,7 @@ export default function Message() {
               Lời chúc từ bạn Khôi
             </h3>
             <p className="text-gray-700">
-              Chúc mừng bạn đã tốt nghiệp! Mong rằng con đường phía trước sẽ
+              Chúc mừng bạn Linh tốt nghiệp! Mong rằng con đường phía trước sẽ
               luôn tràn đầy thành công và niềm vui 🎓✨
             </p>
             <div className="text-right mt-4 text-sm text-gray-500">
